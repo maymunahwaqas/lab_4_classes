@@ -1,3 +1,5 @@
+import java.sql.SQLOutput;
+import java.util.ArrayList;
 public class Runner {
 
     public static void main(String[] args) {
@@ -11,15 +13,21 @@ public class Runner {
         System.out.println("Running rectangle tasks...");
 
         // 1. Create a new rectangle object
-        Rectangle rectangle = new Rectangle(rectangle1)
+        Rectangle rectangle1 = new Rectangle(7, 10);
 
+//        rectangle1.length = 10;
+//        rectangle1.width = 5;
+
+
+//      Rectangle.javaclass variable(storing properties) = the name of the object
         // 2. Calculate the rectangle's area and store it in a variable
-//        int area = <CALL YOUR METHOD HERE>;
-//        System.out.println("The rectangle has an area of " + area);
+        int area = rectangle1.areaCalculator();
+//
+        System.out.println("The rectangle has an area of: " + area);
 
         // 3. Check if your rectangle is actually a square
-//        boolean isRectangle = <CALL YOUR METHOD HERE>
-//        System.out.println("Object is a square (true/false): " + isRectangle);
+        boolean isSquare  = rectangle1.isSquare();
+        System.out.println("Object is a square (true/false): " + isSquare);
     }
 
     public static void computerDemo(){
@@ -27,7 +35,7 @@ public class Runner {
         System.out.println("Running computer tasks...");
 
         // 1. Create a new computer object
-//        Computer computer = <INSTANTIATE A NEW COMPUTER OBJECT HERE>
+        Computer computer = new Computer
 
         // 2. Use a getter to find out how much storage the computer has
 //        int currentStorage = <CALL YOUR METHOD HERE>;
